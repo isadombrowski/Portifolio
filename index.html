@@ -1,25 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio Acadêmico</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    @font-face {
+      font-family: 'RoxboroughCF';
+      src: url('fonts/RoxboroughCF.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      color:#000;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'RoxboroughCF', Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #000;
+      padding: 20px;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 30rem;
+      display: block;
+      margin: 20px auto;
+      box-shadow: 0 0 20px #fff;
+      animation: brilho 2s infinite alternate;
+    }
+
+    @keyframes brilho {
+      from {
+        box-shadow: 0 0 10px #fff;
+      }
+      to {
+        box-shadow: 0 0 20px black;
+      }
+    }
+
+    header {
+      background: #e6ccc8;
+      color: #000;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-top: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      background: #fff;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #e6ccc8;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin: 10px 0;
+    }
+
+    a {
+      color: #e6ccc8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    footer h2 {
+      margin-bottom: 10px;
+    }
+
+
+  </style>
 </head>
 <body>
 
   <header>
-    <img src="/20240601_180258000_iOS.jpeg" alt="Foto de Isabella Dombrowski Zanlorenzi">
+    <img src="/20240601_180258000_iOS.jpg" alt="Foto de Isabella Dombrowski Zanlorenzi" />
     <h1>Isabella Dombrowski Zanlorenzi</h1>
-    <p>Estudante | Área de Interesse | Universidade</p>
+    <p>Estudante | Desenvolvimento web e UX/UI | FATEC São José dos Campos</p>
   </header>
 
   <main>
-
     <section id="introducao">
       <h2>Introdução</h2>
       <p>
-        Sou estudante de Análise e Desenvolvimento de Sistemas com interesse em [áreas]. 
+        Sou estudante de Análise e Desenvolvimento de Sistemas com interesse em desenvolvimento web e UX/UI. 
         Busco oportunidades para aplicar meus conhecimentos em projetos reais e ampliar minha 
         experiência acadêmica e profissional.
       </p>
@@ -27,53 +131,63 @@
 
     <section id="curriculo">
       <h2>Currículo</h2>
-      <p>Confira meu <a href="Currículo Simples com Foto e Informações em Rosa e Branco.pdf" target="_blank">currículo completo em PDF</a>.</p>
+      <p>
+        Confira meu 
+        <a href="Currículo Simples com Foto e Informações em Rosa e Branco.pdf" target="_blank" rel="noopener noreferrer">
+          currículo completo em PDF
+        </a>.
+      </p>
     </section>
 
     <section id="projetos">
       <h2>Projetos Acadêmicos</h2>
       <article>
-        <h3>Título do Projeto</h3>
-        <p><strong>Problema:</strong> Descrição breve do desafio abordado.</p>
-        <p><strong>Abordagem:</strong> Estratégia adotada para resolver o problema.</p>
-        <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript...</p>
-        <p><strong>Resultados:</strong> Resultados alcançados com o projeto.</p>
-        <p><strong>Desafios:</strong> Principais obstáculos enfrentados.</p>
-        <p><strong>Soluções:</strong> Como você resolveu os desafios.</p>
+        <h3>API - Sistemas Y2K</h3>
+        <strong>Objetivo:</strong>
+        <p>Registrar e gerenciar atestados médicos de alunos, facilitando a comunicação entre estudantes, professores e direção.</p>
+        <p>Avaliação contínua de equipes ágeis, permitindo análise de desempenho em projetos de desenvolvimento de software.</p>
+        <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript, Pitão.</p>
+        <p><strong>Desafios:</strong> Ultilização das tecnologias.</p>
       </article>
     </section>
 
     <section id="habilidades">
       <h2>Habilidades</h2>
       <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Python, Java</li>
+        <li>HTML, Python, CSS, JavaScript</li>
+        <li>Pacote Office (Word, Excel, PowerPoint)</li>
+        <li>Escrita criativa</li>
+        <li>Edição de vídeo</li>
         <li>Trabalho em equipe, comunicação, organização</li>
       </ul>
     </section>
 
     <section id="documentos">
-      <h2>Documentos e Trabalhos</h2>
+      <h2>Trabalhos</h2>
       <ul>
-        <li><a href="link-para-documento" target="_blank">Título do Trabalho ou Artigo</a></li>
+        <li><a href="https://github.com/Y2K-Systems/Projeto-Integrador-2025-1" target="_blank" rel="noopener noreferrer">API - Sistemas Y2K</a></li>
       </ul>
     </section>
 
     <section id="certificacoes">
       <h2>Certificações</h2>
       <ul>
-        <li><a href="link-para-certificado" target="_blank">Curso de XYZ - Plataforma</a></li>
+        <li><a href="Certificado.png" target="_blank" rel="noopener noreferrer">Curso básico de Git - Cursa</a></li>
+        <li>IT Essentials pela CISCO</li>
       </ul>
     </section>
 
   </main>
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou estudante de Análise e Desenvolvimento de Sistemas, com interesse em tecnologia, programação e resolução de problemas. Tenho conhecimento em Java, Python, algoritmos e Git/GitHub. Busco constantemente aprender novas tecnologias e aplicá-las em projetos práticos, com foco em desenvolvimento web, banco de dados e boas práticas de software. Valorizo o trabalho em equipe e a inovação com propósito.</p>
 
   <footer id="contato">
     <h2>Contato</h2>
-    <p>Email: seuemail@exemplo.com</p>
+    <p>Email: isabella.zanlorenzi@fatec.sp.gov.br</p>
     <p>
-      <a href="https://www.linkedin.com/in/isabellazanlorenzi/" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/isadombrowski" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/isabellazanlorenzi/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+      <a href="https://github.com/isadombrowski" target="_blank" rel="noopener noreferrer">GitHub</a>
     </p>
   </footer>
 
