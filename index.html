@@ -2,138 +2,80 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfólio - Isabella Dombrowski Zanlorenzi</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Georgia', serif;
-      background-color: #eaeaea;
-      color: #000;
-      padding: 40px 0;
-    }
-
-    .pagina {
-      width: 794px; /* aprox. 21cm em pixels a 96dpi */
-      background-color: white;
-      margin: auto;
-      padding: 60px 80px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    h1 {
-      font-size: 28px;
-      color: #222;
-    }
-
-    h2 {
-      margin-top: 30px;
-      color: #333;
-      font-size: 20px;
-      border-bottom: 1px solid #aaa;
-      padding-bottom: 4px;
-    }
-
-    h3 {
-      margin-top: 15px;
-      font-size: 17px;
-    }
-
-    p, li {
-      font-size: 15px;
-      line-height: 1.6;
-    }
-
-    ul {
-      margin-top: 10px;
-      padding-left: 20px;
-    }
-
-    .projeto-img {
-      max-width: 100%;
-      margin-top: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 14px;
-      color: #777;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Acadêmico</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="pagina">
   <header>
+    <img src="/20240601_180258000_iOS.jpeg" alt="Foto de Isabella Dombrowski Zanlorenzi">
     <h1>Isabella Dombrowski Zanlorenzi</h1>
-    <p>Estudante de Análise e Desenvolvimento de Sistemas - FATEC São José dos Campos</p>
+    <p>Estudante | Área de Interesse | Universidade</p>
   </header>
 
-  <section>
-    <h2>1. Certificações</h2>
-    <ul>
-      <li>Certificação em Hacker Ético - IBSEC</li>
-      <li>Certificação em Cloud Security - IBSEC</li>
-    </ul>
-  </section>
+  <main>
 
-  <section>
-    <h2>2. Competências Técnicas</h2>
-    <p><strong>Linguagens:</strong> HTML, CSS, JavaScript</p>
-    <p><strong>Ferramentas:</strong> Pacote Office (Word, Excel, PowerPoint)</p>
-    <p><strong>Competências:</strong> Comunicação, Trabalho em Equipe, Resolução de Problemas</p>
-  </section>
+    <section id="introducao">
+      <h2>Introdução</h2>
+      <p>
+        Sou estudante de Análise e Desenvolvimento de Sistemas com interesse em [áreas]. 
+        Busco oportunidades para aplicar meus conhecimentos em projetos reais e ampliar minha 
+        experiência acadêmica e profissional.
+      </p>
+    </section>
 
-  <section>
-    <h2>3. Principais Projetos</h2>
-    <h3>Sistema de Gerenciamento de Tarefas (API)</h3>
-    <p><strong>Objetivo:</strong> Registrar e gerir atestados médicos de alunos, facilitando a comunicação entre estudantes, professores e direção. Também permite a avaliação contínua de equipes ágeis.</p>
-    <p><strong>Tecnologias:</strong> Figma, Python, Visual Studio Code</p>
-    <p><strong>Desafio:</strong> Uso inicial das ferramentas</p>
-    <p><strong>Solução:</strong> Aprendizado prático das ferramentas e execução do projeto</p>
-    <p><strong>Repositório:</strong> <a href="https://github.com/Y2K-Systems/Projeto-Integrador-2025-1" target="_blank">github.com/Y2K-Systems</a></p>
-    <img src="banner.jpg" alt="Imagem do Projeto" class="projeto-img">
-  </section>
+    <section id="curriculo">
+      <h2>Currículo</h2>
+      <p>Confira meu <a href="Currículo Simples com Foto e Informações em Rosa e Branco.pdf" target="_blank">currículo completo em PDF</a>.</p>
+    </section>
 
-  <section>
-    <h2>4. Trabalhos Acadêmicos</h2>
-    <h3>Aplicações de Redes Neurais em Diagnóstico Médico Automatizado</h3>
-    <p><strong>Resumo:</strong> Pesquisa exploratória sobre uso de IA para classificar imagens médicas (raio-X e tomografias) usando redes convolucionais.</p>
-    <p><strong>Resultado:</strong> Acurácia de 91% com modelo ResNet50 treinado em base de dados pública</p>
-    <p><strong>Publicação:</strong> Congresso de Computação Aplicada - 2024</p>
-  </section>
+    <section id="projetos">
+      <h2>Projetos Acadêmicos</h2>
+      <article>
+        <h3>Título do Projeto</h3>
+        <p><strong>Problema:</strong> Descrição breve do desafio abordado.</p>
+        <p><strong>Abordagem:</strong> Estratégia adotada para resolver o problema.</p>
+        <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript...</p>
+        <p><strong>Resultados:</strong> Resultados alcançados com o projeto.</p>
+        <p><strong>Desafios:</strong> Principais obstáculos enfrentados.</p>
+        <p><strong>Soluções:</strong> Como você resolveu os desafios.</p>
+      </article>
+    </section>
 
-  <section>
-    <h2>5. Cursos</h2>
-    <ul>
-      <li>Curso de 4h sobre Git</li>
-    </ul>
-  </section>
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, Java</li>
+        <li>Trabalho em equipe, comunicação, organização</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>6. Contato</h2>
-    <p><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/isabellazanlorenzi/" target="_blank">linkedin.com/isabellazanlorenzi</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/isadombrowski" target="_blank">github.com/isadombrowski</a></p>
-    <p><strong>Email:</strong> isabella.zanlorenzi@fatec.sp.gov.br</p>
-  </section>
+    <section id="documentos">
+      <h2>Documentos e Trabalhos</h2>
+      <ul>
+        <li><a href="link-para-documento" target="_blank">Título do Trabalho ou Artigo</a></li>
+      </ul>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Isabella Dombrowski Zanlorenzi. Todos os direitos reservados.</p>
+    <section id="certificacoes">
+      <h2>Certificações</h2>
+      <ul>
+        <li><a href="link-para-certificado" target="_blank">Curso de XYZ - Plataforma</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer id="contato">
+    <h2>Contato</h2>
+    <p>Email: seuemail@exemplo.com</p>
+    <p>
+      <a href="https://www.linkedin.com/in/isabellazanlorenzi/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/isadombrowski" target="_blank">GitHub</a>
+    </p>
   </footer>
-</div>
 
 </body>
 </html>
