@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* boa prática para controle de layout */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30rem;
+    display: block;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: 400px; /* Reduzido de 3cm para 20px */
+    box-shadow: 0 0 20px #fff;
+    animation: brilho-azul 2s infinite alternate;
+}
+
+
+
+/* Aplica display flex apenas aos elementos dentro do header */
+header h1, header p {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* espaçamento entre elementos se necessário */
+}
+
+header {
+    background: #e6ccc8;
+    color: #333; /* melhor contraste para acessibilidade */
+    padding: 60px;
+}
+
+section {
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #e6ccc8;
+}
+
+a {
+    color: #e6ccc8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #eee;
+    text-align: center;
+    padding: 20px;
+}
