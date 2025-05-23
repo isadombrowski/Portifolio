@@ -4,15 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio Acadêmico</title>
-
   <style>
-    @font-face {
-      font-family: 'RoxboroughCF';
-      src: url('fonts/RoxboroughCF.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      color:#000;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
     * {
       margin: 0;
@@ -21,100 +14,124 @@
     }
 
     body {
-      font-family: 'RoxboroughCF', Arial, sans-serif;
-      line-height: 1.6;
-      background: #f4f4f4;
-      color: #000;
+      font-family: 'Inter', sans-serif;
+      background: #f7f7f7;
+      color: #333;
       padding: 20px;
     }
 
+    header {
+      background: #ffe6e1;
+      color: #2e2e2e;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
     img {
-      width: 200px;
-      height: 200px;
-      border-radius: 30rem;
-      display: block;
-      margin: 20px auto;
-      box-shadow: 0 0 20px #fff;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
       animation: brilho 2s infinite alternate;
+      margin-bottom: 15px;
     }
 
     @keyframes brilho {
       from {
-        box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #ffc5bb;
       }
       to {
-        box-shadow: 0 0 20px black;
+        box-shadow: 0 0 20px #f49e94;
       }
     }
 
-    header {
-      background: #e6ccc8;
-      color: #000;
-      padding: 40px 20px;
-      text-align: center;
-      border-radius: 12px;
-      margin-bottom: 20px;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-top: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-    }
-
-    section {
-      background: #fff;
-      margin: 20px 0;
-      padding: 20px;
-      border-radius: 8px;
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
     }
 
     h2 {
-      color: #e6ccc8;
-      margin-bottom: 10px;
       font-size: 1.8rem;
+      color: #f49e94;
+      margin-bottom: 10px;
     }
 
     h3 {
-      font-size: 1.4rem;
-      margin: 10px 0;
+      font-size: 1.3rem;
+      margin-top: 15px;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    section {
+      background: #ffffff;
+      margin: 20px 0;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
     }
 
     a {
-      color: #e6ccc8;
+      color: #f49e94;
       text-decoration: none;
+      font-weight: 600;
     }
 
     a:hover {
       text-decoration: underline;
     }
 
-    ul {
-      padding-left: 20px;
-    }
-
     footer {
-      background: #eee;
+      background: #fff;
       text-align: center;
       padding: 20px;
-      border-radius: 8px;
-      margin-top: 30px;
+      border-radius: 10px;
+      margin-top: 40px;
+      font-size: 0.95rem;
+      color: #555;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
 
-    footer h2 {
-      margin-bottom: 10px;
+    footer a {
+      margin: 0 10px;
     }
 
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
 
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      img {
+        width: 120px;
+        height: 120px;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="20240601_180258000_iOS.jpeg" alt="Foto de Isabella Dombrowski Zanlorenzi" />
+    <img src="/20240601_180258000_iOS.jpg" alt="Foto de Isabella Dombrowski Zanlorenzi" />
     <h1>Isabella Dombrowski Zanlorenzi</h1>
     <p>Estudante | ADS | FATEC São José dos Campos</p>
   </header>
@@ -143,22 +160,18 @@
       <h2>Projetos Acadêmicos</h2>
       <article>
         <h3>API - Sistemas Y2K</h3>
-        <strong>Objetivo:</strong>
-        <p>Registrar e gerenciar atestados médicos de alunos, facilitando a comunicação entre estudantes, professores e direção.</p>
+        <p><strong>Objetivo:</strong> Registrar e gerenciar atestados médicos de alunos, facilitando a comunicação entre estudantes, professores e direção.</p>
         <p>Avaliação contínua de equipes ágeis, permitindo análise de desempenho em projetos de desenvolvimento de software.</p>
-        <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript, Pitão.</p>
-        <p><strong>Desafios:</strong> Ultilização das tecnologias.</p>
+        <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript, Python.</p>
+        <p><strong>Desafios:</strong> Utilização prática das tecnologias em equipe.</p>
       </article>
     </section>
 
     <section id="habilidades">
       <h2>Habilidades</h2>
       <ul>
-        <li>HTML, Python, CSS, JavaScript</li>
-        <li>Pacote Office (Word, Excel, PowerPoint)</li>
-        <li>Escrita criativa</li>
-        <li>Edição de vídeo</li>
-        <li>Trabalho em equipe, comunicação, organização</li>
+        <li><strong>Hard Skills:</strong> HTML, Python, CSS, JavaScript, Pacote Office (Word, Excel, PowerPoint), Edição de vídeo.</li>
+        <li><strong>Soft Skills:</strong> Escrita criativa, Trabalho em equipe, Comunicação, Organização.</li>
       </ul>
     </section>
 
@@ -177,10 +190,17 @@
       </ul>
     </section>
 
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <ul>
+        <li><strong>Nome completo:</strong> Isabella Dombrowski Zanlorenzi</li>
+        <li><strong>Cidade onde mora:</strong> São José dos Campos - SP</li>
+        <li><strong>Idade:</strong> 19</li>
+        <li><strong>Formação:</strong> Cursando Análise e Desenvolvimento de Sistemas na FATEC</li>
+        <li>Tenho conhecimento em Java, Python, algoritmos e Git/GitHub. Busco constantemente aprender novas tecnologias e aplicá-las em projetos práticos, com foco em desenvolvimento web, banco de dados e boas práticas de software. Valorizo o trabalho em equipe e a inovação com propósito.</li>
+      </ul>
+    </section>
   </main>
-  <section id="sobre">
-    <h2>Sobre Mim</h2>
-    <p>Sou estudante de Análise e Desenvolvimento de Sistemas, com interesse em tecnologia, programação e resolução de problemas. Tenho conhecimento em Java, Python, algoritmos e Git/GitHub. Busco constantemente aprender novas tecnologias e aplicá-las em projetos práticos, com foco em desenvolvimento web, banco de dados e boas práticas de software. Valorizo o trabalho em equipe e a inovação com propósito.</p>
 
   <footer id="contato">
     <h2>Contato</h2>
@@ -193,3 +213,187 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Acadêmico</title>
+
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f7f7f7;
+      color: #333;
+      padding-top: 80px; /* espaço para o menu fixo */
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #f49e94;
+      font-weight: 600;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: #ffe6e1;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+
+    img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+      animation: brilho 2s infinite alternate;
+      margin-bottom: 15px;
+    }
+
+    @keyframes brilho {
+      from {
+        box-shadow: 0 0 10px #ffc5bb;
+      }
+      to {
+        box-shadow: 0 0 20px #f49e94;
+      }
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #f49e94;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-top: 15px;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    section {
+      background: #ffffff;
+      margin: 20px 0;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    a {
+      color: #f49e94;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #fff;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 40px;
+      font-size: 0.95rem;
+      color: #555;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      img {
+        width: 120px;
+        height: 120px;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#introducao"><i data-lucide="user"></i> Introdução</a>
+    <a href="#curriculo"><i data-lucide="file-text"></i> Currículo</a>
+    <a href="#projetos"><i data-lucide="code"></i> Projetos</a>
+    <a href="#habilidades"><i data-lucide="layers"></i> Habilidades</a>
+    <a href="#certificacoes"><i data-lucide="award"></i> Certificações</a>
+    <a href="#sobre"><i data-lucide="info"></i> Sobre</a>
+    <a href="#contato"><i data-lucide="mail"></i> Contato</a>
+  </nav>
+
+  <main>
+    <!-- (suas seções seguem normalmente aqui...) -->
+  </main>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>
+
